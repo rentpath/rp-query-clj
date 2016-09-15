@@ -1,5 +1,7 @@
 # rp.query
 
+[![Build Status](https://travis-ci.org/rentpath/rp-query-clj.svg?branch=master)](https://travis-ci.org/rentpath/rp-query-clj)
+
 This library provides a specification of a Clojure map-based DSL for writing relational (plus extensions) queries, inspired by [Honey SQL](https://github.com/jkk/honeysql). Supports a SQL-like syntax, with extensions for supporting operators from Endeca.
 
 This library provides no concrete implementations of this DSL that target specific data stores.
