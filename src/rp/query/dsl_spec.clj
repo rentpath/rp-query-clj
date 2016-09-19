@@ -36,19 +36,6 @@
                               :str (s/and string? (complement str/blank?))))
 (s/def ::dsl/dim-id nat-int?)
 
-(def latitude (s/and number? #(<= -90 % 90)))
-(def longitude (s/and number? #(<= -180 % 180)))
-
-(defn between?
-  ([low-keys high-keys]
-   (between? low-keys high-keys identity))
-  ([low-keys high-keys to-num-f]
-   (fn [coll]
-     (let [low (get-in coll low-keys)
-           high (get-in coll high-keys)]
-       (if (and low high)
-         (< (to-num-f low) (to-num-f high)))))))
-
 (s/def ::g/lat latitude)
 (s/def ::g/lng longitude)
 (s/def ::g/geocode (s/keys :req [::g/lat ::g/lng]))
