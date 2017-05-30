@@ -1,4 +1,4 @@
-(defproject com.rentpath/rp-query-clj "0.1.2"
+(defproject com.rentpath/rp-query-clj "0.1.3-SNAPSHOT"
   :description "RentPath query abstractions in Clojure"
   :url "https://github.com/rentpath/rp-query-clj"
   :license {:name "Eclipse Public License"
